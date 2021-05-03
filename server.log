@@ -1,0 +1,37 @@
+2021-05-03 15:36:46,535 - INFO - Listening at('127.0.0.1', 8888)
+2021-05-03 15:38:03,723 - INFO - Connected by: ('127.0.0.1', 40886)
+2021-05-03 15:38:03,723 - INFO - Received HTTP Request: 
+b'GET /hello HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\n\r\n'
+2021-05-03 15:38:03,724 - INFO - Request Line: GET /hello HTTP/1.1
+2021-05-03 15:38:03,725 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*']
+2021-05-03 15:38:03,725 - INFO - Request Body: 
+
+2021-05-03 15:38:03,726 - INFO - Request Method: GET
+2021-05-03 15:38:03,726 - INFO - Request Path: /hello
+2021-05-03 15:38:03,727 - INFO - HTTP Version: HTTP/1.1
+2021-05-03 15:38:03,727 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: text/html\r\n\r\nHello world'
+2021-05-03 15:41:40,800 - INFO - Connected by: ('127.0.0.1', 40932)
+2021-05-03 15:41:40,800 - INFO - Received HTTP Request: 
+b'POST /resource/add HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\nContent-Type: application/json\r\nContent-Length: 76\r\n\r\n{"requestPath" : "/demo","type" : "text","response": "This is demo of post"}'
+2021-05-03 15:41:40,801 - INFO - Request Line: POST /resource/add HTTP/1.1
+2021-05-03 15:41:40,801 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*', 'Content-Type: application/json', 'Content-Length: 76']
+2021-05-03 15:41:40,802 - INFO - Request Body: 
+{"requestPath" : "/demo","type" : "text","response": "This is demo of post"}
+2021-05-03 15:41:40,802 - INFO - Request Method: POST
+2021-05-03 15:41:40,803 - INFO - Request Path: /resource/add
+2021-05-03 15:41:40,803 - INFO - HTTP Version: HTTP/1.1
+2021-05-03 15:41:40,816 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n{"requestPath": "/demo" , "status" : "SUCCESS" , "message" : "Created"}'
+2021-05-03 15:42:24,374 - INFO - Connected by: ('127.0.0.1', 40976)
+2021-05-03 15:42:24,375 - INFO - Received HTTP Request: 
+b'GET /demo HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\n\r\n'
+2021-05-03 15:42:24,376 - INFO - Request Line: GET /demo HTTP/1.1
+2021-05-03 15:42:24,376 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*']
+2021-05-03 15:42:24,378 - INFO - Request Body: 
+
+2021-05-03 15:42:24,379 - INFO - Request Method: GET
+2021-05-03 15:42:24,380 - INFO - Request Path: /demo
+2021-05-03 15:42:24,380 - INFO - HTTP Version: HTTP/1.1
+2021-05-03 15:42:24,381 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: text/html\r\n\r\nThis is demo of post'

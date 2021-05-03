@@ -1,0 +1,24 @@
+{
+    "requestMapping": [
+        {
+            "requestPath": "/hello",
+            "type": "text",
+            "response": "Hello world"
+        },
+        {
+            "requestPath": "/getHelloFile",
+            "type": "file",
+            "response": "hello.html"
+        },
+        {
+            "requestPath": "/info",
+            "type": "text",
+            "response": "This is sample web server.. "
+        },
+        {
+            "requestPath": "/demo",
+            "type": "text",
+            "response": "This is demo of post"
+        }
+    ]
+}
