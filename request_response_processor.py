@@ -9,7 +9,7 @@ Created on Sat Apr 24 11:28:18 2021
 """
 import json
 from threading import Lock
-
+import logging
 
 class HTTPRequestResponseProcessor:
     headers = {
@@ -41,8 +41,12 @@ class HTTPRequestResponseProcessor:
         self.config_file_name = config_file_name
         self.lock = Lock()
         
-        with open(config_file_name, "r") as config_file:
-            self.config = json.load(config_file)
+        try:
+            with open(config_file_name, "r") as config_file:
+                self.config = json.load(config_file)
+        except:
+            logging.error("Requsting mapping file not present or not a valid json file")
+            exit(0)
     
     def handle_request(self, request):
         """
@@ -88,11 +92,22 @@ class HTTPRequestResponseProcessor:
         response = None
         try:
             reqMap = self.getPathMapping(request.path)
-            if reqMap['type'] == 'text':
-                response = reqMap['response'];
-            else:
-                response = self.readResponseFromFile(reqMap['response'])
+            #Iftype is not defined in request mapping file the default to 'text'
+            if reqMap != None:
+                if 'type' not in reqMap:
+                    resType = 'text'
+                else:
+                    resType = reqMap['type']
+    
+                if resType == 'text':
+                    response = reqMap['response'];
+                else:
+                    response = self.readResponseFromFile(reqMap['response'])
         except:
+            # Below are the possible cases when an exception can occur
+            # 1. Response is not defined in request mapping file 
+            # 2. If response is defined as file and file is not present
+            # No need to do anything here this will be considered as 404
             pass
         return self.prepareResonse(response)
     
@@ -119,13 +134,17 @@ class HTTPRequestResponseProcessor:
             try:
                 reqMap = json.loads(request.body)
                 if self.getPathMapping(reqMap['requestPath']) == None:
-                    self.config['requestMapping'].append(reqMap)
-                    self.writeConfig()
+                    if 'type' in reqMap and 'response' in reqMap:
+                        self.config['requestMapping'].append(reqMap)
+                        self.writeConfig()
+                    else:
+                        response = '{"status" : "FAILED" , "message" : "Request data not valid"}'
                     response = '{"requestPath": "'+ reqMap['requestPath'] +'" , "status" : "SUCCESS" , "message" : "Created"}'
                 else:
                     response = '{"requestPath": "'+ reqMap['requestPath'] +'" , "status" : "FAILED" , "message" : "Already Exist"}'
             except:
-                pass
+                response = '{"status" : "FAILED" , "message" : "Request data not valid"}'
+
         return self.prepareResonse(response,{'Content-Type': 'application/json'})
         
     def writeConfig(self):
@@ -161,9 +180,11 @@ class HTTPRequestResponseProcessor:
             Request mapping if found otherwise None
 
         """
-        for reqMap in self.config['requestMapping']:
-                if reqMap['requestPath'] == path:
-                    return reqMap
+        if 'requestMapping' in self.config:
+            for reqMap in self.config['requestMapping']:
+                if 'requestPath' in reqMap:
+                    if reqMap['requestPath'] == path:
+                        return reqMap
         return None
 
     def handle_PUT(self,request):
@@ -189,14 +210,17 @@ class HTTPRequestResponseProcessor:
                 reqMap = json.loads(request.body)
                 prePath = self.getPathMapping(reqMap['requestPath']) 
                 if prePath != None:
-                    prePath['type'] = reqMap['type']
-                    prePath['response'] = reqMap['response']
-                    self.writeConfig()
-                    response = '{"requestPath": "'+ reqMap['requestPath'] +'" , "status" : "SUCCESS" , "message" : "Updated"}'
+                    if 'type' in reqMap and 'response' in reqMap:
+                        prePath['type'] = reqMap['type']
+                        prePath['response'] = reqMap['response']
+                        self.writeConfig()
+                        response = '{"requestPath": "'+ reqMap['requestPath'] +'" , "status" : "SUCCESS" , "message" : "Updated"}'
+                    else:
+                         response = '{"status" : "FAILED" , "message" : "Request data not valid"}'
                 else:
                     response = '{"requestPath": "'+ reqMap['requestPath'] +'" , "status" : "FAILED" , "message" : "Not Exist"}'
             except:
-                pass
+                response = '{"status" : "FAILED" , "message" : "Request data not valid"}'
         return self.prepareResonse(response,{'Content-Type': 'application/json'})
     
     def handle_HEAD(self,request):
@@ -245,9 +269,10 @@ class HTTPRequestResponseProcessor:
         response_body = b""
         if response != None:
             response_body = response.encode()
+            response_line = self.response_line(200)
         else:
             response_body = b"<h1>404 Not Found</h1>"
-        response_line = self.response_line(200)
+            response_line = self.response_line(404)
         headers = self.response_headers(extra_headers)
         blank_line = b"\r\n"
         return b"".join([response_line, headers, blank_line, response_body])

@@ -35,3 +35,357 @@ b'GET /demo HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccep
 2021-05-03 15:42:24,380 - INFO - HTTP Version: HTTP/1.1
 2021-05-03 15:42:24,381 - INFO - Sending Response:
 b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: text/html\r\n\r\nThis is demo of post'
+2021-05-09 16:25:37,809 - ERROR - Max connection should be valid integer. exiting...
+2021-05-09 16:28:31,981 - INFO - Listening at('127.0.0.1', 8889)
+2021-05-09 16:29:34,414 - INFO - Connected by: ('127.0.0.1', 39028)
+2021-05-09 16:29:34,415 - INFO - Received HTTP Request: 
+b'GET /hello HTTP/1.1\r\nHost: localhost:8889\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\n\r\n'
+2021-05-09 16:29:34,415 - INFO - Request Line: GET /hello HTTP/1.1
+2021-05-09 16:29:34,416 - INFO - Request Headers: ['Host: localhost:8889', 'User-Agent: curl/7.68.0', 'Accept: */*']
+2021-05-09 16:29:34,416 - INFO - Request Body: 
+
+2021-05-09 16:29:34,417 - INFO - Request Method: GET
+2021-05-09 16:29:34,418 - INFO - Request Path: /hello
+2021-05-09 16:29:34,418 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 16:29:34,419 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: text/html\r\n\r\nHello world'
+2021-05-09 16:31:32,575 - INFO - Listening at('127.0.0.1', 8888)
+2021-05-09 16:31:59,003 - INFO - Listening at('127.0.0.1', 8888)
+2021-05-09 16:32:34,597 - ERROR - Please check port in config. exiting...
+2021-05-09 16:33:03,545 - ERROR - Please check port in config. exiting...
+2021-05-09 16:33:27,027 - WARNING - Error in opening confuration file using default
+2021-05-09 16:33:27,031 - INFO - Listening at('127.0.0.1', 8888)
+2021-05-09 16:34:35,268 - WARNING - Error in opening confuration file using default
+2021-05-09 16:34:35,274 - INFO - Listening at('127.0.0.1', 8888)
+2021-05-09 16:35:13,024 - WARNING - Error in parsing confuration using default
+2021-05-09 16:35:13,029 - INFO - Listening at('127.0.0.1', 8888)
+2021-05-09 17:03:33,395 - INFO - Listening at('127.0.0.1', 8888)
+2021-05-09 17:03:57,023 - INFO - Connected by: ('127.0.0.1', 59220)
+2021-05-09 17:03:57,024 - INFO - Received HTTP Request: 
+b'GET /hello HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\n\r\n'
+2021-05-09 17:03:57,024 - INFO - Request Line: GET /hello HTTP/1.1
+2021-05-09 17:03:57,024 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*']
+2021-05-09 17:03:57,025 - INFO - Request Body: 
+
+2021-05-09 17:03:57,025 - INFO - Request Method: GET
+2021-05-09 17:03:57,026 - INFO - Request Path: /hello
+2021-05-09 17:03:57,027 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 17:03:57,027 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: text/html\r\n\r\nHello world'
+2021-05-09 17:04:09,082 - INFO - Connected by: ('127.0.0.1', 59222)
+2021-05-09 17:04:09,083 - INFO - Received HTTP Request: 
+b'GET /helloas HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\n\r\n'
+2021-05-09 17:04:09,083 - INFO - Request Line: GET /helloas HTTP/1.1
+2021-05-09 17:04:09,084 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*']
+2021-05-09 17:04:09,084 - INFO - Request Body: 
+
+2021-05-09 17:04:09,085 - INFO - Request Method: GET
+2021-05-09 17:04:09,085 - INFO - Request Path: /helloas
+2021-05-09 17:04:09,086 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 17:04:09,086 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: text/html\r\n\r\n<h1>404 Not Found</h1>'
+2021-05-09 17:04:55,832 - ERROR - Requsting mapping file not present or not a valid json file
+2021-05-09 17:06:25,577 - INFO - Listening at('127.0.0.1', 8888)
+2021-05-09 17:06:31,400 - INFO - Connected by: ('127.0.0.1', 59224)
+2021-05-09 17:06:31,401 - INFO - Received HTTP Request: 
+b'GET /getHelloFile HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\n\r\n'
+2021-05-09 17:06:31,401 - INFO - Request Line: GET /getHelloFile HTTP/1.1
+2021-05-09 17:06:31,402 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*']
+2021-05-09 17:06:31,402 - INFO - Request Body: 
+
+2021-05-09 17:06:31,403 - INFO - Request Method: GET
+2021-05-09 17:06:31,403 - INFO - Request Path: /getHelloFile
+2021-05-09 17:06:31,404 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 17:06:31,406 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: text/html\r\n\r\nHello from file'
+2021-05-09 17:07:09,369 - INFO - Connected by: ('127.0.0.1', 59226)
+2021-05-09 17:07:09,370 - INFO - Received HTTP Request: 
+b'GET /getHelloFile HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\n\r\n'
+2021-05-09 17:07:09,370 - INFO - Request Line: GET /getHelloFile HTTP/1.1
+2021-05-09 17:07:09,371 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*']
+2021-05-09 17:07:09,371 - INFO - Request Body: 
+
+2021-05-09 17:07:09,372 - INFO - Request Method: GET
+2021-05-09 17:07:09,372 - INFO - Request Path: /getHelloFile
+2021-05-09 17:07:09,373 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 17:07:09,374 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: text/html\r\n\r\n<h1>404 Not Found</h1>'
+2021-05-09 17:08:52,246 - INFO - Connected by: ('127.0.0.1', 59230)
+2021-05-09 17:08:52,247 - INFO - Received HTTP Request: 
+b'POST /resource/add HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\nContent-Type: application/json\r\nContent-Length: 81\r\n\r\n{"requestPath" : "/info","type" : "text","response": "This is sample web server"}'
+2021-05-09 17:08:52,248 - INFO - Request Line: POST /resource/add HTTP/1.1
+2021-05-09 17:08:52,248 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*', 'Content-Type: application/json', 'Content-Length: 81']
+2021-05-09 17:08:52,250 - INFO - Request Body: 
+{"requestPath" : "/info","type" : "text","response": "This is sample web server"}
+2021-05-09 17:08:52,251 - INFO - Request Method: POST
+2021-05-09 17:08:52,251 - INFO - Request Path: /resource/add
+2021-05-09 17:08:52,251 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 17:08:52,252 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n{"requestPath": "/info" , "status" : "FAILED" , "message" : "Already Exist"}'
+2021-05-09 17:09:36,949 - INFO - Connected by: ('127.0.0.1', 59232)
+2021-05-09 17:09:36,949 - INFO - Received HTTP Request: 
+b'POST /resource/add HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\nContent-Type: application/json\r\nContent-Length: 75\r\n\r\n{"requestPath" : "/newPath","type" : "text","response": "This is new Path"}'
+2021-05-09 17:09:36,950 - INFO - Request Line: POST /resource/add HTTP/1.1
+2021-05-09 17:09:36,950 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*', 'Content-Type: application/json', 'Content-Length: 75']
+2021-05-09 17:09:36,951 - INFO - Request Body: 
+{"requestPath" : "/newPath","type" : "text","response": "This is new Path"}
+2021-05-09 17:09:36,951 - INFO - Request Method: POST
+2021-05-09 17:09:36,952 - INFO - Request Path: /resource/add
+2021-05-09 17:09:36,952 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 17:09:36,959 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n{"requestPath": "/newPath" , "status" : "SUCCESS" , "message" : "Created"}'
+2021-05-09 17:09:49,016 - INFO - Connected by: ('127.0.0.1', 59234)
+2021-05-09 17:09:49,017 - INFO - Received HTTP Request: 
+b'GET /newPath HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\n\r\n'
+2021-05-09 17:09:49,018 - INFO - Request Line: GET /newPath HTTP/1.1
+2021-05-09 17:09:49,018 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*']
+2021-05-09 17:09:49,018 - INFO - Request Body: 
+
+2021-05-09 17:09:49,019 - INFO - Request Method: GET
+2021-05-09 17:09:49,019 - INFO - Request Path: /newPath
+2021-05-09 17:09:49,020 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 17:09:49,020 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: text/html\r\n\r\nThis is new Path'
+2021-05-09 17:10:07,004 - INFO - Connected by: ('127.0.0.1', 59236)
+2021-05-09 17:10:07,004 - INFO - Received HTTP Request: 
+b'POST /resource/add HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\nContent-Type: application/json\r\nContent-Length: 48\r\n\r\n{"type" : "text","response": "This is new Path"}'
+2021-05-09 17:10:07,005 - INFO - Request Line: POST /resource/add HTTP/1.1
+2021-05-09 17:10:07,005 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*', 'Content-Type: application/json', 'Content-Length: 48']
+2021-05-09 17:10:07,006 - INFO - Request Body: 
+{"type" : "text","response": "This is new Path"}
+2021-05-09 17:10:07,006 - INFO - Request Method: POST
+2021-05-09 17:10:07,007 - INFO - Request Path: /resource/add
+2021-05-09 17:10:07,007 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 17:10:07,008 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n{"status" : "FAILED" , "message" : "Request data not valid"}'
+2021-05-09 17:10:22,337 - INFO - Connected by: ('127.0.0.1', 59238)
+2021-05-09 17:10:22,339 - INFO - Received HTTP Request: 
+b'POST /resource/add HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\nContent-Type: application/json\r\nContent-Length: 44\r\n\r\n{"requestPath" : "/newPath","type" : "text"}'
+2021-05-09 17:10:22,339 - INFO - Request Line: POST /resource/add HTTP/1.1
+2021-05-09 17:10:22,340 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*', 'Content-Type: application/json', 'Content-Length: 44']
+2021-05-09 17:10:22,341 - INFO - Request Body: 
+{"requestPath" : "/newPath","type" : "text"}
+2021-05-09 17:10:22,342 - INFO - Request Method: POST
+2021-05-09 17:10:22,343 - INFO - Request Path: /resource/add
+2021-05-09 17:10:22,343 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 17:10:22,344 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n{"requestPath": "/newPath" , "status" : "FAILED" , "message" : "Already Exist"}'
+2021-05-09 17:10:34,520 - INFO - Connected by: ('127.0.0.1', 59240)
+2021-05-09 17:10:34,520 - INFO - Received HTTP Request: 
+b'POST /resource/add HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\nContent-Type: application/json\r\nContent-Length: 45\r\n\r\n{"requestPath1" : "/newPath","type" : "text"}'
+2021-05-09 17:10:34,521 - INFO - Request Line: POST /resource/add HTTP/1.1
+2021-05-09 17:10:34,521 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*', 'Content-Type: application/json', 'Content-Length: 45']
+2021-05-09 17:10:34,522 - INFO - Request Body: 
+{"requestPath1" : "/newPath","type" : "text"}
+2021-05-09 17:10:34,522 - INFO - Request Method: POST
+2021-05-09 17:10:34,523 - INFO - Request Path: /resource/add
+2021-05-09 17:10:34,523 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 17:10:34,524 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n{"status" : "FAILED" , "message" : "Request data not valid"}'
+2021-05-09 17:11:08,385 - INFO - Connected by: ('127.0.0.1', 59242)
+2021-05-09 17:11:08,386 - INFO - Received HTTP Request: 
+b'POST /resource/add HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\nContent-Type: application/json\r\nContent-Length: 80\r\n\r\nrequestPath" : "/tapis","type" : "text","response": "This is sample web server"}'
+2021-05-09 17:11:08,386 - INFO - Request Line: POST /resource/add HTTP/1.1
+2021-05-09 17:11:08,387 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*', 'Content-Type: application/json', 'Content-Length: 80']
+2021-05-09 17:11:08,388 - INFO - Request Body: 
+requestPath" : "/tapis","type" : "text","response": "This is sample web server"}
+2021-05-09 17:11:08,388 - INFO - Request Method: POST
+2021-05-09 17:11:08,389 - INFO - Request Path: /resource/add
+2021-05-09 17:11:08,389 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 17:11:08,390 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n{"status" : "FAILED" , "message" : "Request data not valid"}'
+2021-05-09 17:11:39,100 - INFO - Connected by: ('127.0.0.1', 59244)
+2021-05-09 17:11:39,101 - INFO - Received HTTP Request: 
+b'PUT /resource/update HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\nContent-Type: application/json\r\nContent-Length: 90\r\n\r\n{"requestPath" : "/info","type" : "text","response": "This is sample web server again.. "}'
+2021-05-09 17:11:39,102 - INFO - Request Line: PUT /resource/update HTTP/1.1
+2021-05-09 17:11:39,103 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*', 'Content-Type: application/json', 'Content-Length: 90']
+2021-05-09 17:11:39,104 - INFO - Request Body: 
+{"requestPath" : "/info","type" : "text","response": "This is sample web server again.. "}
+2021-05-09 17:11:39,104 - INFO - Request Method: PUT
+2021-05-09 17:11:39,105 - INFO - Request Path: /resource/update
+2021-05-09 17:11:39,105 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 17:11:39,111 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n{"requestPath": "/info" , "status" : "SUCCESS" , "message" : "Updated"}'
+2021-05-09 17:11:49,525 - INFO - Connected by: ('127.0.0.1', 59246)
+2021-05-09 17:11:49,526 - INFO - Received HTTP Request: 
+b'PUT /resource/update HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\nContent-Type: application/json\r\nContent-Length: 88\r\n\r\n{"requestPath" : "/in","type" : "text","response": "This is sample web server again.. "}'
+2021-05-09 17:11:49,527 - INFO - Request Line: PUT /resource/update HTTP/1.1
+2021-05-09 17:11:49,527 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*', 'Content-Type: application/json', 'Content-Length: 88']
+2021-05-09 17:11:49,528 - INFO - Request Body: 
+{"requestPath" : "/in","type" : "text","response": "This is sample web server again.. "}
+2021-05-09 17:11:49,528 - INFO - Request Method: PUT
+2021-05-09 17:11:49,528 - INFO - Request Path: /resource/update
+2021-05-09 17:11:49,529 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 17:11:49,529 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n{"requestPath": "/in" , "status" : "FAILED" , "message" : "Not Exist"}'
+2021-05-09 17:12:03,348 - INFO - Connected by: ('127.0.0.1', 59248)
+2021-05-09 17:12:03,348 - INFO - Received HTTP Request: 
+b'PUT /resource/update HTTP/1.1\r\nHost: localhost:8888\r\nUser-Agent: curl/7.68.0\r\nAccept: */*\r\nContent-Type: application/json\r\nContent-Length: 89\r\n\r\n{"requestPath" : "/info","type" : "text","response": "This is sample web server again.. "'
+2021-05-09 17:12:03,349 - INFO - Request Line: PUT /resource/update HTTP/1.1
+2021-05-09 17:12:03,349 - INFO - Request Headers: ['Host: localhost:8888', 'User-Agent: curl/7.68.0', 'Accept: */*', 'Content-Type: application/json', 'Content-Length: 89']
+2021-05-09 17:12:03,350 - INFO - Request Body: 
+{"requestPath" : "/info","type" : "text","response": "This is sample web server again.. "
+2021-05-09 17:12:03,351 - INFO - Request Method: PUT
+2021-05-09 17:12:03,351 - INFO - Request Path: /resource/update
+2021-05-09 17:12:03,352 - INFO - HTTP Version: HTTP/1.1
+2021-05-09 17:12:03,352 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n{"status" : "FAILED" , "message" : "Request data not valid"}'
+2021-05-09 17:27:12,766 - ERROR - Requsting mapping file not present or not a valid json file
+2021-05-13 12:55:42,572 - INFO - Listening at('127.0.0.1', 8888)
+2021-05-13 12:57:18,310 - INFO - Connected by: ('127.0.0.1', 58048)
+2021-05-13 12:57:18,310 - INFO - Received HTTP Request: 
+b'GET /hello HTTP/1.1\r\nHost: localhost:8888\r\nConnection: keep-alive\r\nsec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\r\nPostman-Token: 6c8bfa87-96a6-7019-1628-89ae8d4309ec\r\nAccept: */*\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2021-05-13 12:57:18,310 - INFO - Request Line: GET /hello HTTP/1.1
+2021-05-13 12:57:18,310 - INFO - Request Headers: ['Host: localhost:8888', 'Connection: keep-alive', 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"', 'Cache-Control: no-cache', 'sec-ch-ua-mobile: ?0', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 'Postman-Token: 6c8bfa87-96a6-7019-1628-89ae8d4309ec', 'Accept: */*', 'Sec-Fetch-Site: none', 'Sec-Fetch-Mode: cors', 'Sec-Fetch-Dest: empty', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: en-US,en;q=0.9']
+2021-05-13 12:57:18,310 - INFO - Request Body: 
+
+2021-05-13 12:57:18,310 - INFO - Request Method: GET
+2021-05-13 12:57:18,311 - INFO - Request Path: /hello
+2021-05-13 12:57:18,311 - INFO - HTTP Version: HTTP/1.1
+2021-05-13 12:57:18,311 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: text/html\r\n\r\nHello world'
+2021-05-13 12:57:18,577 - INFO - Connected by: ('127.0.0.1', 58049)
+2021-05-13 12:58:05,013 - INFO - Received HTTP Request: 
+b'GET /hello HTTP/1.1\r\nHost: localhost:8888\r\nConnection: keep-alive\r\nsec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\r\nPostman-Token: ac77454d-076a-f706-e067-2d5c0d17fa92\r\nAccept: */*\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2021-05-13 12:58:05,014 - INFO - Request Line: GET /hello HTTP/1.1
+2021-05-13 12:58:05,014 - INFO - Request Headers: ['Host: localhost:8888', 'Connection: keep-alive', 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"', 'Cache-Control: no-cache', 'sec-ch-ua-mobile: ?0', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 'Postman-Token: ac77454d-076a-f706-e067-2d5c0d17fa92', 'Accept: */*', 'Sec-Fetch-Site: none', 'Sec-Fetch-Mode: cors', 'Sec-Fetch-Dest: empty', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: en-US,en;q=0.9']
+2021-05-13 12:58:05,014 - INFO - Request Body: 
+
+2021-05-13 12:58:05,014 - INFO - Request Method: GET
+2021-05-13 12:58:05,015 - INFO - Request Path: /hello
+2021-05-13 12:58:05,015 - INFO - HTTP Version: HTTP/1.1
+2021-05-13 12:58:05,015 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: text/html\r\n\r\nHello world'
+2021-05-13 12:59:35,522 - INFO - Connected by: ('127.0.0.1', 58067)
+2021-05-13 12:59:35,522 - INFO - Received HTTP Request: 
+b'POST /resource/add HTTP/1.1\r\nHost: localhost:8888\r\nConnection: keep-alive\r\nContent-Length: 42\r\nsec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"\r\nCache-Control: no-cache\r\nContent-Type: text/plain;charset=UTF-8\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\r\nPostman-Token: 305a76f2-3d85-4f68-5abb-d04e6b04ac67\r\nAccept: */*\r\nOrigin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{\n"username":"tapis",\n"password":"tapis"\n}'
+2021-05-13 12:59:35,522 - INFO - Request Line: POST /resource/add HTTP/1.1
+2021-05-13 12:59:35,522 - INFO - Request Headers: ['Host: localhost:8888', 'Connection: keep-alive', 'Content-Length: 42', 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"', 'Cache-Control: no-cache', 'Content-Type: text/plain;charset=UTF-8', 'sec-ch-ua-mobile: ?0', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 'Postman-Token: 305a76f2-3d85-4f68-5abb-d04e6b04ac67', 'Accept: */*', 'Origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop', 'Sec-Fetch-Site: none', 'Sec-Fetch-Mode: cors', 'Sec-Fetch-Dest: empty', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: en-US,en;q=0.9']
+2021-05-13 12:59:35,522 - INFO - Request Body: 
+{
+"username":"tapis",
+"password":"tapis"
+}
+2021-05-13 12:59:35,522 - INFO - Request Method: POST
+2021-05-13 12:59:35,522 - INFO - Request Path: /resource/add
+2021-05-13 12:59:35,522 - INFO - HTTP Version: HTTP/1.1
+2021-05-13 12:59:35,522 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n{"status" : "FAILED" , "message" : "Request data not valid"}'
+2021-05-13 12:59:35,784 - INFO - Connected by: ('127.0.0.1', 58068)
+2021-05-13 13:00:04,358 - INFO - Received HTTP Request: 
+b'POST /resource/add HTTP/1.1\r\nHost: localhost:8888\r\nConnection: keep-alive\r\nContent-Length: 121\r\nsec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"\r\nCache-Control: no-cache\r\nContent-Type: text/plain;charset=UTF-8\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\r\nPostman-Token: 3ef0fd19-3808-b0ad-a38b-0d60cd41e93a\r\nAccept: */*\r\nOrigin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{\n            "requestPath": "/newPath",\n            "type": "text",\n            "response": "This is new Path"\n        }'
+2021-05-13 13:00:04,358 - INFO - Request Line: POST /resource/add HTTP/1.1
+2021-05-13 13:00:04,359 - INFO - Request Headers: ['Host: localhost:8888', 'Connection: keep-alive', 'Content-Length: 121', 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"', 'Cache-Control: no-cache', 'Content-Type: text/plain;charset=UTF-8', 'sec-ch-ua-mobile: ?0', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 'Postman-Token: 3ef0fd19-3808-b0ad-a38b-0d60cd41e93a', 'Accept: */*', 'Origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop', 'Sec-Fetch-Site: none', 'Sec-Fetch-Mode: cors', 'Sec-Fetch-Dest: empty', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: en-US,en;q=0.9']
+2021-05-13 13:00:04,359 - INFO - Request Body: 
+{
+            "requestPath": "/newPath",
+            "type": "text",
+            "response": "This is new Path"
+        }
+2021-05-13 13:00:04,359 - INFO - Request Method: POST
+2021-05-13 13:00:04,359 - INFO - Request Path: /resource/add
+2021-05-13 13:00:04,359 - INFO - HTTP Version: HTTP/1.1
+2021-05-13 13:00:04,360 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n{"requestPath": "/newPath" , "status" : "FAILED" , "message" : "Already Exist"}'
+2021-05-13 13:00:26,692 - INFO - Connected by: ('127.0.0.1', 58076)
+2021-05-13 13:00:26,692 - INFO - Received HTTP Request: 
+b'POST /resource/add HTTP/1.1\r\nHost: localhost:8888\r\nConnection: keep-alive\r\nContent-Length: 127\r\nsec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"\r\nCache-Control: no-cache\r\nContent-Type: text/plain;charset=UTF-8\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\r\nPostman-Token: 059c34d4-88c5-0e77-f34d-8e7168e18c16\r\nAccept: */*\r\nOrigin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{\n            "requestPath": "/demoPath",\n            "type": "text",\n            "response": "This is new Demo Path"\n        }'
+2021-05-13 13:00:26,692 - INFO - Request Line: POST /resource/add HTTP/1.1
+2021-05-13 13:00:26,692 - INFO - Request Headers: ['Host: localhost:8888', 'Connection: keep-alive', 'Content-Length: 127', 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"', 'Cache-Control: no-cache', 'Content-Type: text/plain;charset=UTF-8', 'sec-ch-ua-mobile: ?0', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 'Postman-Token: 059c34d4-88c5-0e77-f34d-8e7168e18c16', 'Accept: */*', 'Origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop', 'Sec-Fetch-Site: none', 'Sec-Fetch-Mode: cors', 'Sec-Fetch-Dest: empty', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: en-US,en;q=0.9']
+2021-05-13 13:00:26,692 - INFO - Request Body: 
+{
+            "requestPath": "/demoPath",
+            "type": "text",
+            "response": "This is new Demo Path"
+        }
+2021-05-13 13:00:26,692 - INFO - Request Method: POST
+2021-05-13 13:00:26,692 - INFO - Request Path: /resource/add
+2021-05-13 13:00:26,692 - INFO - HTTP Version: HTTP/1.1
+2021-05-13 13:00:26,692 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n{"requestPath": "/demoPath" , "status" : "SUCCESS" , "message" : "Created"}'
+2021-05-13 13:00:26,957 - INFO - Connected by: ('127.0.0.1', 58078)
+2021-05-13 13:00:39,650 - INFO - Received HTTP Request: 
+b'POST /demoPath HTTP/1.1\r\nHost: localhost:8888\r\nConnection: keep-alive\r\nContent-Length: 127\r\nsec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"\r\nCache-Control: no-cache\r\nContent-Type: text/plain;charset=UTF-8\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\r\nPostman-Token: 14e93615-4bdd-7184-1e38-d08a8edad0fe\r\nAccept: */*\r\nOrigin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{\n            "requestPath": "/demoPath",\n            "type": "text",\n            "response": "This is new Demo Path"\n        }'
+2021-05-13 13:00:39,651 - INFO - Request Line: POST /demoPath HTTP/1.1
+2021-05-13 13:00:39,651 - INFO - Request Headers: ['Host: localhost:8888', 'Connection: keep-alive', 'Content-Length: 127', 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"', 'Cache-Control: no-cache', 'Content-Type: text/plain;charset=UTF-8', 'sec-ch-ua-mobile: ?0', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 'Postman-Token: 14e93615-4bdd-7184-1e38-d08a8edad0fe', 'Accept: */*', 'Origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop', 'Sec-Fetch-Site: none', 'Sec-Fetch-Mode: cors', 'Sec-Fetch-Dest: empty', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: en-US,en;q=0.9']
+2021-05-13 13:00:39,651 - INFO - Request Body: 
+{
+            "requestPath": "/demoPath",
+            "type": "text",
+            "response": "This is new Demo Path"
+        }
+2021-05-13 13:00:39,651 - INFO - Request Method: POST
+2021-05-13 13:00:39,652 - INFO - Request Path: /demoPath
+2021-05-13 13:00:39,652 - INFO - HTTP Version: HTTP/1.1
+2021-05-13 13:00:39,652 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n<h1>404 Not Found</h1>'
+2021-05-13 13:02:04,163 - INFO - Connected by: ('127.0.0.1', 58102)
+2021-05-13 13:02:04,164 - INFO - Received HTTP Request: 
+b'GET /demoPath HTTP/1.1\r\nHost: localhost:8888\r\nConnection: keep-alive\r\nsec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\r\nPostman-Token: 43b45c81-a665-fcc4-7e00-a90155dfb74f\r\nAccept: */*\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2021-05-13 13:02:04,164 - INFO - Request Line: GET /demoPath HTTP/1.1
+2021-05-13 13:02:04,164 - INFO - Request Headers: ['Host: localhost:8888', 'Connection: keep-alive', 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"', 'Cache-Control: no-cache', 'sec-ch-ua-mobile: ?0', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 'Postman-Token: 43b45c81-a665-fcc4-7e00-a90155dfb74f', 'Accept: */*', 'Sec-Fetch-Site: none', 'Sec-Fetch-Mode: cors', 'Sec-Fetch-Dest: empty', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: en-US,en;q=0.9']
+2021-05-13 13:02:04,164 - INFO - Request Body: 
+
+2021-05-13 13:02:04,164 - INFO - Request Method: GET
+2021-05-13 13:02:04,164 - INFO - Request Path: /demoPath
+2021-05-13 13:02:04,164 - INFO - HTTP Version: HTTP/1.1
+2021-05-13 13:02:04,164 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: text/html\r\n\r\nThis is new Demo Path'
+2021-05-13 13:02:04,429 - INFO - Connected by: ('127.0.0.1', 58103)
+2021-05-13 13:02:11,149 - INFO - Received HTTP Request: 
+b'GET /demo HTTP/1.1\r\nHost: localhost:8888\r\nConnection: keep-alive\r\nsec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\r\nPostman-Token: 89b7558c-48c7-9fc0-b3df-c190fd23a7e2\r\nAccept: */*\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2021-05-13 13:02:11,149 - INFO - Request Line: GET /demo HTTP/1.1
+2021-05-13 13:02:11,150 - INFO - Request Headers: ['Host: localhost:8888', 'Connection: keep-alive', 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"', 'Cache-Control: no-cache', 'sec-ch-ua-mobile: ?0', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 'Postman-Token: 89b7558c-48c7-9fc0-b3df-c190fd23a7e2', 'Accept: */*', 'Sec-Fetch-Site: none', 'Sec-Fetch-Mode: cors', 'Sec-Fetch-Dest: empty', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: en-US,en;q=0.9']
+2021-05-13 13:02:11,150 - INFO - Request Body: 
+
+2021-05-13 13:02:11,150 - INFO - Request Method: GET
+2021-05-13 13:02:11,150 - INFO - Request Path: /demo
+2021-05-13 13:02:11,150 - INFO - HTTP Version: HTTP/1.1
+2021-05-13 13:02:11,150 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: text/html\r\n\r\nThis is demo of post'
+2021-05-13 13:02:16,673 - INFO - Connected by: ('127.0.0.1', 58117)
+2021-05-13 13:02:16,675 - INFO - Received HTTP Request: 
+b'GET /demoio HTTP/1.1\r\nHost: localhost:8888\r\nConnection: keep-alive\r\nsec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\r\nPostman-Token: 21e2f774-49dd-7ed3-d22a-de9f1e5018e1\r\nAccept: */*\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2021-05-13 13:02:16,675 - INFO - Request Line: GET /demoio HTTP/1.1
+2021-05-13 13:02:16,675 - INFO - Request Headers: ['Host: localhost:8888', 'Connection: keep-alive', 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"', 'Cache-Control: no-cache', 'sec-ch-ua-mobile: ?0', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 'Postman-Token: 21e2f774-49dd-7ed3-d22a-de9f1e5018e1', 'Accept: */*', 'Sec-Fetch-Site: none', 'Sec-Fetch-Mode: cors', 'Sec-Fetch-Dest: empty', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: en-US,en;q=0.9']
+2021-05-13 13:02:16,675 - INFO - Request Body: 
+
+2021-05-13 13:02:16,675 - INFO - Request Method: GET
+2021-05-13 13:02:16,675 - INFO - Request Path: /demoio
+2021-05-13 13:02:16,675 - INFO - HTTP Version: HTTP/1.1
+2021-05-13 13:02:16,675 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: text/html\r\n\r\n<h1>404 Not Found</h1>'
+2021-05-13 13:02:16,924 - INFO - Connected by: ('127.0.0.1', 58118)
+2021-05-13 13:02:55,902 - INFO - Received HTTP Request: 
+b'POST /demoio HTTP/1.1\r\nHost: localhost:8888\r\nConnection: keep-alive\r\nContent-Length: 127\r\nsec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"\r\nCache-Control: no-cache\r\nContent-Type: text/plain;charset=UTF-8\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\r\nPostman-Token: 1ad64e41-d083-0387-dcdc-175d8b3e6b92\r\nAccept: */*\r\nOrigin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{\n            "requestPath": "/demoPath",\n            "type": "text",\n            "response": "This is new Demo Path"\n        }'
+2021-05-13 13:02:55,902 - INFO - Request Line: POST /demoio HTTP/1.1
+2021-05-13 13:02:55,903 - INFO - Request Headers: ['Host: localhost:8888', 'Connection: keep-alive', 'Content-Length: 127', 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"', 'Cache-Control: no-cache', 'Content-Type: text/plain;charset=UTF-8', 'sec-ch-ua-mobile: ?0', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 'Postman-Token: 1ad64e41-d083-0387-dcdc-175d8b3e6b92', 'Accept: */*', 'Origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop', 'Sec-Fetch-Site: none', 'Sec-Fetch-Mode: cors', 'Sec-Fetch-Dest: empty', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: en-US,en;q=0.9']
+2021-05-13 13:02:55,903 - INFO - Request Body: 
+{
+            "requestPath": "/demoPath",
+            "type": "text",
+            "response": "This is new Demo Path"
+        }
+2021-05-13 13:02:55,903 - INFO - Request Method: POST
+2021-05-13 13:02:55,903 - INFO - Request Path: /demoio
+2021-05-13 13:02:55,903 - INFO - HTTP Version: HTTP/1.1
+2021-05-13 13:02:55,903 - INFO - Sending Response:
+b'HTTP/1.1 200 OK\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n<h1>404 Not Found</h1>'
+2021-05-13 13:16:15,618 - INFO - Listening at('127.0.0.1', 8888)
+2021-05-13 13:16:25,080 - INFO - Connected by: ('127.0.0.1', 58480)
+2021-05-13 13:16:25,080 - INFO - Received HTTP Request: 
+b'POST /demoio HTTP/1.1\r\nHost: localhost:8888\r\nConnection: keep-alive\r\nContent-Length: 127\r\nsec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"\r\nCache-Control: no-cache\r\nContent-Type: text/plain;charset=UTF-8\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\r\nPostman-Token: 6361fb66-b17f-dd16-334b-181221d8b3ff\r\nAccept: */*\r\nOrigin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{\n            "requestPath": "/demoPath",\n            "type": "text",\n            "response": "This is new Demo Path"\n        }'
+2021-05-13 13:16:25,080 - INFO - Request Line: POST /demoio HTTP/1.1
+2021-05-13 13:16:25,080 - INFO - Request Headers: ['Host: localhost:8888', 'Connection: keep-alive', 'Content-Length: 127', 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"', 'Cache-Control: no-cache', 'Content-Type: text/plain;charset=UTF-8', 'sec-ch-ua-mobile: ?0', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 'Postman-Token: 6361fb66-b17f-dd16-334b-181221d8b3ff', 'Accept: */*', 'Origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop', 'Sec-Fetch-Site: none', 'Sec-Fetch-Mode: cors', 'Sec-Fetch-Dest: empty', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: en-US,en;q=0.9']
+2021-05-13 13:16:25,080 - INFO - Request Body: 
+{
+            "requestPath": "/demoPath",
+            "type": "text",
+            "response": "This is new Demo Path"
+        }
+2021-05-13 13:16:25,081 - INFO - Request Method: POST
+2021-05-13 13:16:25,081 - INFO - Request Path: /demoio
+2021-05-13 13:16:25,081 - INFO - HTTP Version: HTTP/1.1
+2021-05-13 13:16:25,081 - INFO - Sending Response:
+b'HTTP/1.1 404 Not Found\r\nServer: CrudeServer\r\nContent-Type: application/json\r\n\r\n<h1>404 Not Found</h1>'
+2021-05-13 13:16:25,333 - INFO - Connected by: ('127.0.0.1', 58481)

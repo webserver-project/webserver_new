@@ -13,12 +13,22 @@
         {
             "requestPath": "/info",
             "type": "text",
-            "response": "This is sample web server.. "
+            "response": "This is sample web server again.. "
         },
         {
             "requestPath": "/demo",
             "type": "text",
             "response": "This is demo of post"
+        },
+        {
+            "requestPath": "/newPath",
+            "type": "text",
+            "response": "This is new Path"
+        },
+        {
+            "requestPath": "/demoPath",
+            "type": "text",
+            "response": "This is new Demo Path"
         }
     ]
 }

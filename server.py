@@ -22,7 +22,6 @@ class HTTPServer:
     def __init__(self, config , executor):
         self.config = config
         self.executor = executor
-        logging.basicConfig(filename=self.config["logfile"], format='%(asctime)s - %(levelname)s - %(message)s',level=logging.INFO)
         
     def start(self):
         """
@@ -33,6 +32,9 @@ class HTTPServer:
         None.
 
         """
+         #create a response processor
+        responseProcessor = HTTPRequestResponseProcessor(self.config['requestMappingFile']) 
+        
         # create a socket object
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -44,9 +46,6 @@ class HTTPServer:
         self.server_socket = s
         
         logging.info("Listening at" + str(s.getsockname()))
-        
-        #create a response processor
-        responseProcessor = HTTPRequestResponseProcessor(self.config['requestMappingFile'])    
         
         while True:
             # accept any new connection
@@ -129,5 +128,5 @@ class HTTPServer:
             logging.info("Sending Response:\n"+ str(response))
             conn.sendall(response)
             conn.close()
-        except Exception as e: logging.info(e)
+        except Exception as e: logging.error(e)
 
